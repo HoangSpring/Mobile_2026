@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|end"
+        android:padding="20dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <Button android:text="AC" android:onClick="onClearClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#A5A5A5" android:textColor="#000000" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="24sp" />
+        <Button android:text="+/-" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#A5A5A5" android:textColor="#000000" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="24sp" />
+        <Button android:text="%" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#A5A5A5" android:textColor="#000000" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="24sp" />
+        <Button android:text="÷" android:onClick="onOperatorClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#F1A33C" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+
+        <Button android:text="7" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="8" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="9" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="×" android:onClick="onOperatorClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#F1A33C" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+
+        <Button android:text="4" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="5" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="6" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="-" android:onClick="onOperatorClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#F1A33C" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+
+        <Button android:text="1" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="2" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="3" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="+" android:onClick="onOperatorClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#F1A33C" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+
+        <Button android:text="0" android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="2" android:layout_columnSpan="2" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="." android:onClick="onNumberClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#333333" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+        <Button android:text="=" android:onClick="onEqualClick" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="90dp" android:backgroundTint="#F1A33C" android:insetTop="1dp" android:insetBottom="1dp" android:insetLeft="1dp" android:insetRight="1dp" android:textSize="28sp" />
+
+    </GridLayout>
+</LinearLayout>
