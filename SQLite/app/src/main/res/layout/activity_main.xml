@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUẢN LÝ SINH VIÊN"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ID (để Sửa hoặc Xóa)"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên sinh viên"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập địa chỉ"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số điện thoại"
+        android:inputType="phone"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Xem DS" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Cập nhật" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Xóa" />
+    </LinearLayout>
+
+</LinearLayout>
